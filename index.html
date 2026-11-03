@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>D Vishnu Vardhan | Aspiring Embedded Systems Engineer | B.Tech ECE</title>
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Portfolio of D Vishnu Vardhan, an Electronics & Communication Engineering student passionate about Embedded Systems, Embedded C, Linux Internals, Microcontrollers, and PCB Design." />
+    <meta name="keywords" content="D Vishnu Vardhan, Embedded Systems Engineer, Embedded C, Linux Internals, B.Tech ECE, Microcontrollers, PCB Design, Networking, TCP/IP, Computer Architecture" />
+    <meta name="author" content="D Vishnu Vardhan" />
+    <meta name="robots" content="index, follow" />
+    <meta name="theme-color" content="#0b1020" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="D Vishnu Vardhan | Aspiring Embedded Systems Engineer" />
+    <meta property="og:description" content="Explore low-level systems projects, bare-metal firmware, Linux internals, and hardware PCB engineering by D Vishnu Vardhan." />
+    <meta property="og:image" content="/og-image.png" />
+    <meta property="og:url" content="https://vishnuvardhan-portfolio.vercel.app/" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="D Vishnu Vardhan | Aspiring Embedded Systems Engineer" />
+    <meta name="twitter:description" content="Explore low-level systems projects, bare-metal firmware, Linux internals, and hardware PCB engineering." />
+    <meta name="twitter:image" content="/og-image.png" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="apple-touch-icon" href="/favicon.svg" />
+
+    <!-- Google Fonts Preconnect & Async Load -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Accessibility Skip Link -->
+    <a href="#main-content" class="skip-link" style="position: absolute; top: -100px; left: 1rem; background: #35e0ff; color: #0b1020; padding: 0.5rem 1rem; border-radius: 4px; font-weight: 700; z-index: 9999; transition: top 0.2s ease;">
+      Skip to content
+    </a>
+    <script>
+      const skipLink = document.querySelector('.skip-link');
+      if (skipLink) {
+        skipLink.addEventListener('focus', () => { skipLink.style.top = '1rem'; });
+        skipLink.addEventListener('blur', () => { skipLink.style.top = '-100px'; });
+      }
+    </script>
+
+    <!-- App Container -->
+    <div id="app"></div>
+
+    <!-- Application Script Module -->
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

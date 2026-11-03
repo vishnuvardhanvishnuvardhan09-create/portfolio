@@ -1,0 +1,76 @@
+/**
+ * Animations & Keyframes
+ * Subtle reveals, glowing circuit effects, hover 3D tilt styles
+ */
+
+/* Reveal Animations - Safe visible by default */
+.reveal-on-scroll {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.5s cubic-bezier(0.16, 1, 0.3, 1), transform 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-on-scroll.is-revealed {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Stagger delay classes */
+.delay-1 { transition-delay: 0.1s; }
+.delay-2 { transition-delay: 0.2s; }
+.delay-3 { transition-delay: 0.3s; }
+.delay-4 { transition-delay: 0.4s; }
+
+/* Subtle Ambient Glow */
+@keyframes ambient-glow {
+  0%, 100% {
+    opacity: 0.4;
+    filter: blur(20px);
+  }
+  50% {
+    opacity: 0.8;
+    filter: blur(30px);
+  }
+}
+
+.glow-ambient {
+  animation: ambient-glow 4s infinite ease-in-out;
+}
+
+/* Subtle data stream shimmer */
+@keyframes data-shimmer {
+  0% {
+    background-position: -200% 0;
+  }
+  100% {
+    background-position: 200% 0;
+  }
+}
+
+.shimmer-text {
+  background: linear-gradient(90deg, #eef2ff 0%, #35e0ff 50%, #eef2ff 100%);
+  background-size: 200% auto;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: data-shimmer 4s linear infinite;
+}
+
+/* 3D Tilt Card Helper */
+.tilt-card {
+  transition: transform 0.18s cubic-bezier(0.2, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* Reduced Motion respects */
+@media (prefers-reduced-motion: reduce) {
+  .reveal-on-scroll {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  .glow-ambient,
+  .shimmer-text {
+    animation: none !important;
+  }
+}

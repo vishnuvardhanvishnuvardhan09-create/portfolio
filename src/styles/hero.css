@@ -1,0 +1,366 @@
+/**
+ * Hero Section Styles
+ * Features D Vishnu Vardhan's professional portrait photo with cybernetic glowing ring,
+ * recruiter-focused headline, action CTAs, and 3D Holographic Silicon Core HUD.
+ */
+
+.hero-section {
+  min-height: calc(100vh - var(--nav-height));
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding-top: calc(var(--nav-height) + 2rem);
+  padding-bottom: 5rem;
+  overflow: hidden;
+}
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 3rem;
+  align-items: center;
+  width: 100%;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  z-index: 2;
+}
+
+/* Profile Row with Avatar */
+.hero-profile-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.hero-avatar-wrapper {
+  position: relative;
+  width: 76px;
+  height: 76px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, var(--accent-cyan), #8b5cf6, var(--accent-amber));
+  box-shadow: 0 0 25px rgba(53, 224, 255, 0.4);
+  flex-shrink: 0;
+}
+
+.hero-avatar-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  background: #0b1020;
+  border: 2px solid #0b1020;
+  transition: transform 0.3s ease;
+}
+
+.hero-avatar-wrapper:hover .hero-avatar-img {
+  transform: scale(1.05);
+}
+
+.avatar-pulse-ring {
+  position: absolute;
+  inset: -6px;
+  border-radius: 50%;
+  border: 1px dashed rgba(53, 224, 255, 0.4);
+  animation: rotate-ring 12s linear infinite;
+  pointer-events: none;
+}
+
+@keyframes rotate-ring {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.hero-status-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.65rem;
+  padding: 0.5rem 1.15rem;
+  border-radius: 999px;
+  background: rgba(17, 26, 51, 0.85);
+  border: 1px solid rgba(53, 224, 255, 0.35);
+  box-shadow: 0 0 20px rgba(53, 224, 255, 0.15);
+  width: fit-content;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--accent-cyan);
+  box-shadow: 0 0 10px var(--accent-cyan);
+  animation: pulse-dot 2s infinite ease-in-out;
+}
+
+@keyframes pulse-dot {
+  0%, 100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.4);
+    opacity: 0.6;
+  }
+}
+
+.status-text {
+  font-family: var(--font-mono);
+  font-size: 0.84rem;
+  color: var(--accent-cyan);
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
+.hero-title {
+  font-size: clamp(2.5rem, 5.2vw, 4rem);
+  font-weight: 800;
+  line-height: 1.1;
+  margin-bottom: 0.85rem;
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+}
+
+.hero-title .name-highlight {
+  background: linear-gradient(135deg, #ffffff 20%, var(--accent-cyan) 80%, #75ecff 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  filter: drop-shadow(0 0 20px rgba(53, 224, 255, 0.3));
+}
+
+.hero-subtitle {
+  font-family: var(--font-heading);
+  font-size: clamp(1.2rem, 2.3vw, 1.5rem);
+  font-weight: 600;
+  color: var(--accent-cyan);
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.hero-intro {
+  font-size: 1.05rem;
+  color: var(--text-secondary);
+  line-height: 1.75;
+  max-width: 600px;
+  margin-bottom: 2.25rem;
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.1rem;
+  margin-bottom: 2.75rem;
+}
+
+.hero-meta-strip {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.75rem;
+  padding-top: 1.75rem;
+  border-top: 1px solid rgba(30, 46, 84, 0.7);
+}
+
+.hero-meta-item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.hero-meta-label {
+  font-size: 0.75rem;
+  font-family: var(--font-mono);
+  color: var(--text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.hero-meta-value {
+  font-size: 1rem;
+  font-family: var(--font-heading);
+  color: var(--text-primary);
+  font-weight: 600;
+}
+
+/* 3D Holographic Silicon Canvas Wrapper */
+.hero-canvas-wrapper {
+  position: relative;
+  width: 100%;
+  height: 560px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+  background: radial-gradient(circle at center, rgba(14, 26, 52, 0.6) 0%, rgba(7, 11, 22, 0) 70%);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(53, 224, 255, 0.15);
+  box-shadow: inset 0 0 35px rgba(53, 224, 255, 0.05);
+}
+
+.canvas-header-badge {
+  position: absolute;
+  top: 16px;
+  left: 20px;
+  right: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.canvas-core-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  color: var(--accent-cyan);
+  background: rgba(11, 16, 32, 0.85);
+  border: 1px solid rgba(53, 224, 255, 0.3);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
+}
+
+.canvas-live-tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--accent-amber);
+  background: rgba(11, 16, 32, 0.85);
+  border: 1px solid rgba(255, 180, 84, 0.3);
+  padding: 0.35rem 0.75rem;
+  border-radius: 6px;
+  backdrop-filter: blur(8px);
+}
+
+.canvas-container {
+  width: 100%;
+  height: 100%;
+  cursor: grab;
+  position: relative;
+  z-index: 1;
+}
+
+.canvas-container:active {
+  cursor: grabbing;
+}
+
+.canvas-hint {
+  position: absolute;
+  bottom: 14px;
+  right: 18px;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.76rem;
+  font-family: var(--font-mono);
+  color: var(--text-secondary);
+  background: rgba(11, 16, 32, 0.85);
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  border: 1px solid rgba(53, 224, 255, 0.25);
+  pointer-events: none;
+  backdrop-filter: blur(6px);
+  z-index: 2;
+}
+
+.canvas-hint svg {
+  width: 15px;
+  height: 15px;
+  stroke: var(--accent-cyan);
+}
+
+/* 3D Loading State */
+.canvas-loader {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+  background: rgba(11, 16, 32, 0.96);
+  border-radius: var(--radius-lg);
+  z-index: 5;
+  transition: opacity 0.4s ease, visibility 0.4s ease;
+}
+
+.canvas-loader.loaded {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.loader-circuit-spinner {
+  width: 60px;
+  height: 60px;
+  border: 3px solid rgba(53, 224, 255, 0.15);
+  border-top-color: var(--accent-cyan);
+  border-right-color: var(--accent-amber);
+  border-bottom-color: #8b5cf6;
+  border-radius: 50%;
+  animation: circuit-spin 1.1s cubic-bezier(0.5, 0.1, 0.4, 0.9) infinite;
+}
+
+.loader-text {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+@keyframes circuit-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Responsive adjustments */
+@media (max-width: 992px) {
+  .hero-grid {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+
+  .hero-canvas-wrapper {
+    height: 440px;
+  }
+
+  .hero-title {
+    font-size: clamp(2.2rem, 6vw, 3.2rem);
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-canvas-wrapper {
+    height: 350px;
+  }
+
+  .hero-profile-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.85rem;
+  }
+
+  .hero-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .hero-actions .btn {
+    width: 100%;
+  }
+
+  .hero-meta-strip {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.25rem;
+  }
+}
