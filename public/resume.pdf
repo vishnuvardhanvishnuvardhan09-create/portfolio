@@ -41,7 +41,7 @@ endobj
 >>
 endobj
 6 0 obj
-<< /Length 2250 >>
+<< /Length 2350 >>
 stream
 BT
 /F1 22 Tf
@@ -115,15 +115,13 @@ ET
 BT
 /F2 9.5 Tf
 50 462 Td
-(- Programming Languages: Embedded C, Data Structures & Algorithms) Tj
+(- C with DSA: Pointers, Memory Management, Bitwise Operations, Linked Lists, Stacks, Queues, Algorithms) Tj
 0 -13 Td
-(- Other Skills: Linux Internals - Processes, Threads & Synchronization) Tj
+(- Python: Core Python, OOP Concepts, Automation, Data Structures, Scripting, Problem Solving) Tj
 0 -13 Td
-(- Networking Protocols: TCP/IP & UDP) Tj
+(- Microcontroller: 8051 & ARM Cortex-M Architectures, Register-Level Programming, GPIO, Timers, PWM, ADC, UART, I2C, SPI) Tj
 0 -13 Td
-(- Architecture: Computer and Microprocessor) Tj
-0 -13 Td
-(- Hardware & Tools: PCB Design (Schematic Capture, Routing, DRC, Gerber Export)) Tj
+(- Computer Architecture: CPU Organization, Instruction Cycles, Pipelining, Cache Memory, Addressing Modes, System Buses) Tj
 ET
 BT
 /F1 13 Tf

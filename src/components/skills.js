@@ -30,6 +30,20 @@ function getCategoryIcon(type) {
           <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path>
         </svg>
       `;
+    case 'python':
+      return `
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path d="M12 2C6.48 2 6 4 6 5v2h6v2H4c-1.5 0-3 1.5-3 3s1 4 3 4h2v-2c0-1.5 1-3 3-3h6c1.5 0 2-1 2-2V5c0-1-1.5-3-5-3h-3zm-1 2a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm1 18c5.52 0 6-2 6-3v-2h-6v-2h8c1.5 0 3-1.5 3-3s-1-4-3-4h-2v2c0 1.5-1 3-3 3h-6c-1.5 0-2 1-2 2v4c0 1 1.5 3 5 3h3zm1-2a1 1 0 1 1 0-2 1 1 0 0 1 0 2z"/>
+        </svg>
+      `;
+    case 'chip':
+      return `
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <rect x="4" y="4" width="16" height="16" rx="2"></rect>
+          <path d="M9 9h6v6H9z"></path>
+          <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"></path>
+        </svg>
+      `;
     case 'cpu':
       return `
         <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">

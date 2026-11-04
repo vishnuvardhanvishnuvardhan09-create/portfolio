@@ -17,7 +17,7 @@ export const profileData = {
   hero: {
     badge: "Embedded Systems & Firmware Engineer • B.Tech ECE",
     headline: "Architecting Reliable Bare-Metal Systems & Linux Internals",
-    tagline: "Electronics and Communication Engineering student with a passion for Embedded C, Linux systems programming, microcontrollers, and hardware-software integration.",
+    tagline: "Electronics and Communication Engineering student skilled in C with DSA, Python, Microcontrollers, and Computer Architecture.",
     ctaPrimary: "View Embedded Projects",
     ctaSecondary: "Download Resume",
     resumeLink: "/resume.pdf"
@@ -28,27 +28,27 @@ export const profileData = {
     sectionTag: "About Me",
     title: "Passionate about low-level software and high-reliability hardware.",
     careerObjective: "Seeking a career that is more innovative and challenging which provides me opportunities to learn and enhance my skills and strengths in conjunction with company goals and objectives.",
-    bio: "A quick learner and creative problem solver with a positive attitude, interested in Embedded C, Linux internals and networking, looking for an opportunity to learn and contribute to a company's goals.",
+    bio: "A quick learner and creative problem solver with a positive attitude, skilled in C with DSA, Python, Microcontroller, and Computer Architecture, looking for an opportunity to learn and contribute to a company's goals.",
     detailedBio: [
-      "Currently pursuing B.Tech in Electronics and Communication Engineering at Sri Venkatesa Perumal College of Engineering and Technology (JNTU Ananthapur), I bridge the gap between abstract software concepts and physical hardware execution.",
-      "My core competencies center around writing memory-efficient Embedded C, exploring Linux process management and thread synchronization mechanisms, implementing network protocols (TCP/UDP), and designing clean PCBs."
+      "Currently pursuing B.Tech in Electronics and Communication Engineering at Sri Venkatesa Perumal College of Engineering and Technology (JNTU Ananthapur), I bridge the gap between software algorithms and hardware execution.",
+      "My core technical competencies center around C programming with Data Structures & Algorithms, Python scripting & automation, Microcontroller interfacing & peripheral drivers, and Computer Architecture concepts."
     ],
     highlights: [
       {
-        label: "Specialization",
-        value: "Embedded C & Linux Internals"
+        label: "Programming",
+        value: "C with DSA"
       },
       {
-        label: "Education",
-        value: "B.Tech ECE (Expected 2027)"
+        label: "Scripting",
+        value: "Python"
       },
       {
-        label: "Hardware Skills",
-        value: "Microcontrollers & PCB Design"
+        label: "Hardware",
+        value: "Microcontroller"
       },
       {
-        label: "Mindset",
-        value: "Fast Learner & Team Player"
+        label: "Systems",
+        value: "Computer Architecture"
       }
     ],
     personalTraits: [

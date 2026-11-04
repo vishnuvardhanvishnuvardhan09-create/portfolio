@@ -1,102 +1,86 @@
 /**
  * Technical Skills Configuration for D Vishnu Vardhan
  * 
- * Edit this file to add or update technical skills, categories,
- * proficiency notes, or tags without touching layout or 3D rendering code.
+ * Configured specifically with core technical competencies:
+ * - C with DSA
+ * - Python
+ * - Microcontroller
+ * - Computer Architecture
  */
 
 export const skillsData = [
   {
-    id: "programming",
-    category: "Programming",
+    id: "c-with-dsa",
+    category: "C with DSA",
     icon: "code",
-    summary: "Foundational low-level systems programming and efficient data organization.",
+    summary: "Strong foundation in low-level C programming, dynamic memory management, and efficient data structures & algorithms.",
     skills: [
       {
-        name: "Embedded C",
-        detail: "Memory management, bit manipulation, pointers, register-level hardware access, volatile qualifiers, and bare-metal programming.",
-        level: "Core Focus"
+        name: "C Programming",
+        detail: "Pointers, dynamic memory allocation (malloc/free), memory layouts, bitwise operators, structures, unions, and file handling.",
+        level: "Core Strength"
       },
       {
         name: "Data Structures & Algorithms",
-        detail: "Linked lists, circular buffers, stacks, queues, hash maps, sorting algorithms, and time/space complexity optimization.",
-        level: "Foundational"
+        detail: "Arrays, linked lists, stacks, queues, circular buffers, binary search trees, hashing, searching and sorting algorithms with complexity analysis.",
+        level: "Proficient"
       }
     ],
     accent: "#35e0ff"
   },
   {
-    id: "linux-internals",
-    category: "Linux Internals",
-    icon: "terminal",
-    summary: "Operating system principles, kernel-space interfaces, and multitasking concurrency.",
+    id: "python",
+    category: "Python",
+    icon: "python",
+    summary: "Versatile programming for scripting, automation, problem solving, and data manipulation.",
     skills: [
       {
-        name: "Processes & IPC",
-        detail: "Process lifecycle (fork, exec, wait), signals, pipes, FIFOs, and shared memory communication.",
-        level: "Intermediate"
+        name: "Core Python & OOP",
+        detail: "Object-oriented programming, data structures (lists, tuples, dicts, sets), list comprehensions, modular programming, and error handling.",
+        level: "Proficient"
       },
       {
-        name: "POSIX Threads (pthreads)",
-        detail: "Multi-threaded programming, thread lifecycle management, scheduling, and thread pools.",
-        level: "Intermediate"
-      },
-      {
-        name: "Synchronization Primitives",
-        detail: "Mutexes, condition variables, semaphores, deadlock avoidance, and race condition mitigation.",
+        name: "Automation & Scripting",
+        detail: "Automating routine tasks, file processing, data parsing, standard libraries, and algorithmic problem solving.",
         level: "Intermediate"
       }
     ],
     accent: "#35e0ff"
   },
   {
-    id: "networking",
-    category: "Networking",
-    icon: "network",
-    summary: "Network protocol stacks, communication sockets, and embedded transmission.",
+    id: "microcontroller",
+    category: "Microcontroller",
+    icon: "chip",
+    summary: "Direct hardware interfacing, peripheral programming, and embedded device architecture.",
     skills: [
       {
-        name: "TCP/IP Protocol Suite",
-        detail: "Reliable stream sockets, 3-way handshake, flow control, congestion handling, and client-server architecture.",
-        level: "Core"
+        name: "MCU Architecture & Peripherals",
+        detail: "8051 and ARM Cortex-M microcontrollers, internal memory organization, register-level configuration, and clock trees.",
+        level: "Core Competency"
       },
       {
-        name: "UDP Protocol",
-        detail: "Low-latency connectionless datagram sockets for real-time telemetry and streaming transmission.",
-        level: "Core"
-      }
-    ],
-    accent: "#35e0ff"
-  },
-  {
-    id: "architecture",
-    category: "Architecture",
-    icon: "cpu",
-    summary: "Hardware organization, computational execution units, and peripheral interfacing.",
-    skills: [
-      {
-        name: "Computer Architecture",
-        detail: "Instruction cycle, pipelining, cache memory hierarchies, interrupt handling, and bus protocols (I2C, SPI, UART).",
-        level: "Advanced"
-      },
-      {
-        name: "Microprocessors & MCUs",
-        detail: "8085/8086 architectures, ARM Cortex basics, timer/counter subsystems, ADC/DAC interfacing, and GPIO manipulation.",
-        level: "Core"
+        name: "Interfacing & Communication",
+        detail: "GPIO programming, Timers/Counters, PWM generation, Interrupts (ISR), ADC/DAC conversion, and UART, I2C, SPI serial buses.",
+        level: "Practical Hands-on"
       }
     ],
     accent: "#ffb454"
   },
   {
-    id: "hardware",
-    category: "Hardware",
-    icon: "pcb",
-    summary: "Circuit board design, physical layout constraints, and hardware prototyping.",
+    id: "computer-architecture",
+    category: "Computer Architecture",
+    icon: "cpu",
+    summary: "Fundamental understanding of processor design, instruction execution, and system memory hierarchy.",
     skills: [
       {
-        name: "PCB Design",
-        detail: "Schematic design, component footprints, track routing, ground planes, DRC checks, and Gerber generation for manufacture.",
-        level: "Hands-on Workshop"
+        name: "Processor Organization",
+        detail: "Instruction cycle (Fetch, Decode, Execute), ALU operations, registers, addressing modes, and pipelining stages.",
+        level: "Advanced"
+      },
+      {
+        name: "Memory & Bus Systems",
+        detail: "Cache hierarchies, memory mapping, virtual memory concepts, I/O organization, interrupts, and system bus architectures.",
+        level: "Core Understanding"
       }
     ],
     accent: "#ffb454"

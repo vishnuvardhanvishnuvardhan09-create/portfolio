@@ -62,20 +62,20 @@ export function renderHero() {
 
             <div class="hero-meta-strip">
               <div class="hero-meta-item">
-                <span class="hero-meta-label">Domain</span>
-                <span class="hero-meta-value">Embedded Systems</span>
+                <span class="hero-meta-label">Programming</span>
+                <span class="hero-meta-value">C with DSA</span>
               </div>
               <div class="hero-meta-item">
-                <span class="hero-meta-label">Core Language</span>
-                <span class="hero-meta-value">Embedded C</span>
-              </div>
-              <div class="hero-meta-item">
-                <span class="hero-meta-label">OS Focus</span>
-                <span class="hero-meta-value">Linux Internals</span>
+                <span class="hero-meta-label">Scripting</span>
+                <span class="hero-meta-value">Python</span>
               </div>
               <div class="hero-meta-item">
                 <span class="hero-meta-label">Hardware</span>
-                <span class="hero-meta-value">MCUs & PCB Design</span>
+                <span class="hero-meta-value">Microcontroller</span>
+              </div>
+              <div class="hero-meta-item">
+                <span class="hero-meta-label">Systems</span>
+                <span class="hero-meta-value">Computer Architecture</span>
               </div>
             </div>
           </div>
